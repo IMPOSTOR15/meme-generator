@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Мемогенератор</title>
+        
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1 class="title">Мемогенератор</h1>
+        <main class="root">
+            <section class="settings-section">
+                <div class="fileUploadWrapper">
+                    <label class="input-file">
+                        <span class="input-file-text" type="text"></span>
+                        <input type="file" name="file" id="imageInput">        
+                        <span class="input-file-btn">Выберите файл</span>
+                    </label>
+                    <label class="input-label input-label_column">
+                        <span class="input-caption">Текст мема </span>
+                        <input class="input-meme-text" type="text" id="memeText" placeholder="Введите текст мема" value="текст мема">     
+                    </label>
+                </div>
+                <div class="elemenntStyle">
+                    <!-- <div class="option-row">
+                        <label class="input-label">
+                            <span class="input-caption">X: </span>
+                            <input class="option-input" type="number" id="xPosition" value="250">
+                        </label>
+                        <label class="input-label">
+                            <span class="input-caption">Y: </span>
+                            <input class="option-input" type="number" id="yPosition" value="450">
+                        </label>
+                    </div> -->
+                    <div class="option-row">
+                        <label class="input-label input-label_vertical">
+                            <span class="input-caption">Размер шрифта</span>
+                            <input class="option-input" type="number" id="fontSize" value="30">
+                        </label>
+                        <label class="input-label input-label_vertical">
+                            <span class="input-caption">Толщина обводки</span>
+                            <input class="option-input" type="number" id="lineWidth" value="1">
+                        </label>
+                    </div>
+                    <div class="option-row">
+                        <label class="input-label input-label_vertical">
+                            <span class="input-caption">Цвет текста</span>
+                            <input class="color-input" type="color" id="textColor" value="#FFFFFF">
+                        </label>
+                        <label class="input-label input-label_vertical">
+                            <span class="input-caption">Цвет обводки</span>
+                            <input class="color-input" type="color" id="strokeColor" value="#000000">
+                        </label>
+                    </div>
+                </div>
+                <p class="error-text" id="errorText" style="display: none;">Проверьте заполнения полей</p>
+                <div class="buttons">
+                    <button class="button button_main" id="drawBtn">
+                        <img class="button-icon" src="<%=require('./assets/icons/plus.svg')%>"alt="">
+                        <span>Добавить элемент</span>
+                    </button>
+                    <button class="button button_main" id="deleteBtn">
+                        <img class="button-icon" src="<%=require('./assets/icons/delete.svg')%>"alt="">
+                        <span>Удалить элемент</span>
+                    </button>
+                    <button class="button button_main" id="saveBtn">
+                        <img class="button-icon" src="<%=require('./assets/icons/save.svg')%>"alt="">
+                        <span>Сохранить изображение</span>
+                    </button>
+                </div>
+            </section>
+            <section class="canvas-section">
+                <canvas id="canvas" width="600" height="600"></canvas>
+            </section>
+        </main>
+        <div class="element-list">
+            <template>
+                <div class="element">
+
+                </div>
+            </template>
+        </div>
+    </body>
+</html>

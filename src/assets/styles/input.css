@@ -1,0 +1,66 @@
+.input-label {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+.input-label_column {
+    flex-direction: column;
+    align-items: start;
+}
+
+.input-label_vertical {
+    flex-direction: column;
+}
+
+.input-caption {
+    color: #fff;
+}
+
+.input-meme-text {
+    width: calc(100% - 20px);
+    background-color: #293474;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #293474;
+    border-radius: 10px;
+}
+
+.input-meme-text:focus {
+    outline: none;
+    border: 2px dashed rgb(71, 71, 233);
+}
+
+.option-input {
+    background-color: #293474;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #293474;
+    border-radius: 10px;
+    max-width: 50px;
+    text-align: center;
+}
+.option-input:focus {
+    outline: none;
+    border: 2px dashed rgb(71, 71, 233);
+}
+
+.color-input {
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.color-input:focus {
+    outline: none;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
